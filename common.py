@@ -1,0 +1,2 @@
+host = 'http://127.0.0.1'
+rcv_addr = '0x5D89fD9098370772E16E7cE7906864147cC6be8A'
