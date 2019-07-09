@@ -17,10 +17,10 @@ class BitApsForwarding:
     def get_header(self, token_only=False, **auth_type):
         headers = {}
 
-        if 'Access-Token' in auth_type:
-            headers['Access-Token'] = auth_type['Access-Token']
-        elif 'Payment-Code' in auth_type:
-            headers['Payment-Code'] = auth_type['Payment-Code']
+        if 'access_token' in auth_type:
+            headers['Access-Token'] = auth_type['access_token']
+        elif 'payment_code' in auth_type:
+            headers['Payment-Code'] = auth_type['payment_code']
 
         if token_only and 'Access-Token' not in headers:
             raise Exception('Access-Token is required')
